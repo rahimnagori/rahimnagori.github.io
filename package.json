@@ -1,0 +1,20 @@
+{
+  "name": "rahimnagori.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html --port 3000"
+  },
+  "keywords": [],
+  "author": "Abdul Rahim Nagori",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
