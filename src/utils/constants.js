@@ -2,7 +2,7 @@ import { logo, profileImage } from "./images";
 
 const PROJECT_DEFAULTS = {
   logo: logo,
-  profileImage: profileImage,
+  profileImage: logo,
   firstName: "Abdul Rahim",
   lastName: "Nagori",
   contact: {

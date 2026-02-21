@@ -1,10 +1,10 @@
 import PROJECT_DEFAULTS from "../utils/constants";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import { logo } from "../utils/images";
+// import { logo } from "../utils/images";
 
 const App = () => {
-  const { firstName, lastName } = PROJECT_DEFAULTS;
+  const { firstName, lastName, logo } = PROJECT_DEFAULTS;
 
   return (
     <div className="app-container">
