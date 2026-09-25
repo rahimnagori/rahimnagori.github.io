@@ -1,25 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Full Stack Developer portfolio showcasing expertise in React, Node.js, JavaScript, TypeScript, and more.">
-    <meta name="keywords" content="Full Stack Developer, React, Node.js, JavaScript, TypeScript, MySQL, MongoDB">
-    <meta name="author" content="Rahim Nagori">
-    <meta property="og:title" content="Rahim Nagori - Full Stack Developer">
-    <meta property="og:description"
-        content="Full Stack Developer specializing in React, Node.js, JavaScript, and TypeScript">
-    <meta property="og:type" content="website">
-    <title>Abdul Rahim Nagori - Full Stack Developer | React & Node.js Expert</title>
-    <link rel="canonical" href="https://rahimnagori.github.io/">
-    <link href="./src/index.css" type="text/css" rel="stylesheet" />
+    <title>Vibely — Connect. Share. Inspire.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div id="root">Not Rendered!</div>
-    <script type="module" src="./index.js"></script>
-</body>
 
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">Vibely<span>.</span></h1>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Vibely...">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-icon"><i class="fas fa-home"></i></div>
+            <div class="nav-icon"><i class="fas fa-comment-dots"></i></div>
+            <div class="nav-icon"><i class="fas fa-bell"></i><span class="badge">3</span></div>
+            <div class="nav-icon"><i class="fas fa-user"></i></div>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN LAYOUT ===== -->
+    <div class="container">
+
+        <!-- ===== LEFT SIDEBAR ===== -->
+        <aside class="sidebar-left">
+            <ul>
+                <li class="active"><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-compass"></i> Explore</li>
+                <li><i class="fas fa-users"></i> Communities</li>
+                <li><i class="fas fa-bookmark"></i> Saved</li>
+                <li><i class="fas fa-chart-line"></i> Trending</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+
+            <button class="btn-create">
+                <i class="fas fa-plus"></i> Create Post
+            </button>
+        </aside>
+
+        <!-- ===== FEED ===== -->
+        <main class="feed">
+
+            <!-- Stories -->
+            <section class="stories">
+                <div class="story add-story">
+                    <div class="story-circle"><i class="fas fa-plus"></i></div>
+                    <p>Add Story</p>
+                </div>
+                <div class="story">
+                    <div class="story-circle" style="background-image:url('https://i.pravatar.cc/100?img=1')"></div>
+                    <p>Aisha</p>
+                </div>
+                <div class="story">
+                    <div class="story-circle" style="background-image:url('https://i.pravatar.cc/100?img=2')"></div>
+                    <p>Rohan</p>
+                </div>
+                <div class="story">
+                    <div class="story-circle" style="background-image:url('https://i.pravatar.cc/100?img=3')"></div>
+                    <p>Meera</p>
+                </div>
+                <div class="story">
+                    <div class="story-circle" style="background-image:url('https://i.pravatar.cc/100?img=4')"></div>
+                    <p>Zaid</p>
+                </div>
+            </section>
+
+            <!-- Create Post -->
+            <section class="create-post">
+                <img src="https://i.pravatar.cc/100?img=5" alt="You" class="avatar">
+                <input type="text" placeholder="What's on your mind?">
+                <button class="btn-post">Post</button>
+            </section>
+
+            <!-- Post 1 -->
+            <article class="post">
+                <header class="post-header">
+                    <img src="https://i.pravatar.cc/100?img=6" alt="User" class="avatar">
+                    <div>
+                        <h3>Sara Khan</h3>
+                        <span>2 hours ago · Mumbai</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h more"></i>
+                </header>
+                <p class="post-text">Just launched my new design portfolio! ✨ Would love your feedback 💜</p>
+                <img src="https://picsum.photos/seed/design/600/350" alt="Post" class="post-img">
+                <footer class="post-actions">
+                    <span><i class="fas fa-heart"></i> 124</span>
+                    <span><i class="fas fa-comment"></i> 18</span>
+                    <span><i class="fas fa-share"></i> Share</span>
+                </footer>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post">
+                <header class="post-header">
+                    <img src="https://i.pravatar.cc/100?img=7" alt="User" class="avatar">
+                    <div>
+                        <h3>Aditya Verma</h3>
+                        <span>5 hours ago · Indore</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h more"></i>
+                </header>
+                <p class="post-text">Golden hour at the hills 🌄 Nothing beats this peace.</p>
+                <img src="https://picsum.photos/seed/hills/600/350" alt="Post" class="post-img">
+                <footer class="post-actions">
+                    <span><i class="fas fa-heart"></i> 201</span>
+                    <span><i class="fas fa-comment"></i> 34</span>
+                    <span><i class="fas fa-share"></i> Share</span>
+                </footer>
+            </article>
+
+        </main>
+
+        <!-- ===== RIGHT SIDEBAR ===== -->
+        <aside class="sidebar-right">
+            <div class="card suggestions">
+                <h3>Suggestions</h3>
+                <div class="suggestion">
+                    <img src="https://i.pravatar.cc/100?img=8" class="avatar-sm">
+                    <div>
+                        <h4>Neha Sharma</h4>
+                        <span>@neha.designs</span>
+                    </div>
+                    <button>Follow</button>
+                </div>
+                <div class="suggestion">
+                    <img src="https://i.pravatar.cc/100?img=9" class="avatar-sm">
+                    <div>
+                        <h4>Imran Ali</h4>
+                        <span>@imran.codes</span>
+                    </div>
+                    <button>Follow</button>
+                </div>
+                <div class="suggestion">
+                    <img src="https://i.pravatar.cc/100?img=10" class="avatar-sm">
+                    <div>
+                        <h4>Priya Mehta</h4>
+                        <span>@priya.writes</span>
+                    </div>
+                    <button>Follow</button>
+                </div>
+            </div>
+
+            <div class="card trending">
+                <h3>Trending</h3>
+                <p>#DesignInspiration</p>
+                <p>#GoldenHour</p>
+                <p>#TechTalk2026</p>
+                <p>#VibelyCommunity</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Vibely · Made with 💜</p>
+    </footer>
+
+</body>
 </html>
